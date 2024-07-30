@@ -12,18 +12,8 @@ class ActiveDrawerItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Container(
-          height: 60,
-          width: 6,
-          decoration: const BoxDecoration(
-            color: kSelectionColor,
-            borderRadius: BorderRadius.only(
-              topRight: Radius.circular(24),
-              bottomRight: Radius.circular(24),
-            ),
-          ),
-        ),
-        const SizedBox(width: 38),
+        _buildSelectedDecoration(),
+        const SizedBox(width: 32),
         SvgPicture.asset(
           itemModel.image,
           colorFilter: const ColorFilter.mode(kSelectionColor, BlendMode.srcIn),
@@ -36,6 +26,20 @@ class ActiveDrawerItem extends StatelessWidget {
       ],
     );
   }
+
+  Container _buildSelectedDecoration() {
+    return Container(
+      height: 60,
+      width: 6,
+      decoration: const BoxDecoration(
+        color: kSelectionColor,
+        borderRadius: BorderRadius.only(
+          topRight: Radius.circular(24),
+          bottomRight: Radius.circular(24),
+        ),
+      ),
+    );
+  }
 }
 
 class InActiveDrawerItem extends StatelessWidget {
@@ -46,7 +50,7 @@ class InActiveDrawerItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        const SizedBox(width: 44),
+        const SizedBox(width: 38, height: 60),
         SvgPicture.asset(
           itemModel.image,
         ),

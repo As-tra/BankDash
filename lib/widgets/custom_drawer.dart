@@ -12,16 +12,24 @@ class CustomDrawer extends StatelessWidget {
     return Drawer(
       backgroundColor: kSurface,
       shape: const BeveledRectangleBorder(),
-      child: Column(
-        children: [
-          ListTile(
-            leading: Image.asset(Assets.iconsLogo),
-            title: Text(
-              'BankDash.',
-              style: Styles.abelRegular25(context),
+      child: CustomScrollView(
+        slivers: [
+          SliverToBoxAdapter(
+            child: Column(
+              children: [
+                ListTile(
+                  contentPadding: const EdgeInsets.symmetric(horizontal: 38),
+                  leading: Image.asset(Assets.iconsLogo),
+                  title: Text(
+                    'BankDash.',
+                    style: Styles.abelRegular25(context),
+                  ),
+                ),
+                const SizedBox(height: 40),
+              ],
             ),
           ),
-          const Expanded(child: CustomDrawerListView()),
+          const CustomDrawerListView(),
         ],
       ),
     );

@@ -26,7 +26,7 @@ class _CustomDrawerListViewState extends State<CustomDrawerListView> {
   int currentIndex = 0;
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
+    return SliverList.builder(
       itemCount: CustomDrawerListView.items.length,
       itemBuilder: (context, index) {
         return GestureDetector(
@@ -37,7 +37,7 @@ class _CustomDrawerListViewState extends State<CustomDrawerListView> {
             }
           },
           child: Padding(
-            padding: const EdgeInsets.only(bottom: 24.0),
+            padding: const EdgeInsets.only(bottom: 16.0),
             child: CustomDrawerItem(
               item: CustomDrawerListView.items[index],
               isActive: currentIndex == index,
