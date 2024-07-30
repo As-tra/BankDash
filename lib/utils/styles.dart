@@ -97,6 +97,7 @@ abstract class Styles {
       color: kPrimary3,
     );
   }
+
   static TextStyle interSemiBold28(BuildContext context) {
     return TextStyle(
       fontFamily: kInter,
@@ -119,6 +120,23 @@ abstract class Styles {
     return TextStyle(
       fontFamily: kAbel,
       fontSize: getResponsiveFontSize(context: context, baseSize: 25),
+      color: const Color(0xff343C6A),
+    );
+  }
+
+  static TextStyle interSemiBold22(BuildContext context) {
+    return TextStyle(
+      fontFamily: kInter,
+      fontSize: getResponsiveFontSize(context: context, baseSize: 22),
+      fontWeight: FontWeight.w600,
+      color: const Color(0xff343C6A),
+    );
+  }
+  static TextStyle interSemiBold17(BuildContext context) {
+    return TextStyle(
+      fontFamily: kInter,
+      fontSize: getResponsiveFontSize(context: context, baseSize: 17),
+      fontWeight: FontWeight.w600,
       color: const Color(0xff343C6A),
     );
   }
