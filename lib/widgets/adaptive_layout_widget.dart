@@ -8,7 +8,7 @@ class AdaptiveLayoutWidget extends StatelessWidget {
       required this.tabletLayout,
       required this.desktopLayout});
 
-  final Widget Function(BuildContext context) mobileLayout, tabletLayout, desktopLayout;
+  final WidgetBuilder mobileLayout, tabletLayout, desktopLayout;
 
   @override
   Widget build(BuildContext context) {
