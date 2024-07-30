@@ -1,5 +1,4 @@
 import 'package:bank_dashboard/widgets/adaptive_layout_widget.dart';
-import 'package:bank_dashboard/widgets/custom_drawer.dart';
 import 'package:bank_dashboard/widgets/desktop_layout.dart';
 import 'package:flutter/material.dart';
 
@@ -9,7 +8,7 @@ class DashboardView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: const CustomDrawer(),
+      // drawer: const CustomDrawer(),
       body: AdaptiveLayoutWidget(
         mobileLayout: (context) => const Placeholder(),
         tabletLayout: (context) => const Placeholder(),

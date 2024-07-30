@@ -105,6 +105,13 @@ abstract class Styles {
       color: kSurface,
     );
   }
+   static TextStyle abelRegular25(BuildContext context) {
+    return TextStyle(
+      fontFamily: kAbel,
+      fontSize: getResponsiveFontSize(context: context, baseSize: 25),
+      color: const Color(0xff343C6A),
+    );
+  }
 }
 
 double getResponsiveFontSize({
