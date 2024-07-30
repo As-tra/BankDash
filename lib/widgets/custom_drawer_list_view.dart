@@ -7,15 +7,15 @@ class CustomDrawerListView extends StatefulWidget {
   const CustomDrawerListView({super.key});
 
   static List<DrawerItemModel> items = const [
-    DrawerItemModel(image: Assets.iconsHome, title: 'Dashboard'),
-    DrawerItemModel(image: Assets.iconsTransaction, title: 'Transactions'),
-    DrawerItemModel(image: Assets.iconsAccount, title: 'Accounts'),
-    DrawerItemModel(image: Assets.iconsInvestment, title: 'Investments'),
-    DrawerItemModel(image: Assets.iconsCreditCard, title: 'Credit Cards'),
-    DrawerItemModel(image: Assets.iconsLoan, title: 'Loans'),
-    DrawerItemModel(image: Assets.iconsService, title: 'Services'),
-    DrawerItemModel(image: Assets.iconsPrivileges, title: 'My Privileges'),
-    DrawerItemModel(image: Assets.iconsSettings, title: 'Setting'),
+    DrawerItemModel(image: Assets.imagesHome, title: 'Dashboard'),
+    DrawerItemModel(image: Assets.imagesTransaction, title: 'Transactions'),
+    DrawerItemModel(image: Assets.imagesAccount, title: 'Accounts'),
+    DrawerItemModel(image: Assets.imagesInvestment, title: 'Investments'),
+    DrawerItemModel(image: Assets.imagesCreditCard, title: 'Credit Cards'),
+    DrawerItemModel(image: Assets.imagesLoan, title: 'Loans'),
+    DrawerItemModel(image: Assets.imagesService, title: 'Services'),
+    DrawerItemModel(image: Assets.imagesPrivileges, title: 'My Privileges'),
+    DrawerItemModel(image: Assets.imagesSettings, title: 'Setting'),
   ];
 
   @override
@@ -37,7 +37,7 @@ class _CustomDrawerListViewState extends State<CustomDrawerListView> {
             }
           },
           child: Padding(
-            padding: const EdgeInsets.only(bottom: 16.0),
+            padding: const EdgeInsets.only(bottom: 6.0),
             child: CustomDrawerItem(
               item: CustomDrawerListView.items[index],
               isActive: currentIndex == index,

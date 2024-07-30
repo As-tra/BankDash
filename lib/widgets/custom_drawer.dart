@@ -11,6 +11,7 @@ class CustomDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
       backgroundColor: kSurface,
+      
       shape: const BeveledRectangleBorder(),
       child: CustomScrollView(
         slivers: [
@@ -19,7 +20,7 @@ class CustomDrawer extends StatelessWidget {
               children: [
                 ListTile(
                   contentPadding: const EdgeInsets.symmetric(horizontal: 38),
-                  leading: Image.asset(Assets.iconsLogo),
+                  leading: Image.asset(Assets.imagesLogo),
                   title: Text(
                     'BankDash.',
                     style: Styles.abelRegular25(context),

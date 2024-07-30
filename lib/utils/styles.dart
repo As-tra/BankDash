@@ -97,6 +97,15 @@ abstract class Styles {
       color: kPrimary3,
     );
   }
+  static TextStyle interSemiBold28(BuildContext context) {
+    return TextStyle(
+      fontFamily: kInter,
+      fontSize: getResponsiveFontSize(context: context, baseSize: 28),
+      fontWeight: FontWeight.w600,
+      color: const Color(0xff343C6A),
+    );
+  }
+
   static TextStyle latoSemiBold16(BuildContext context) {
     return TextStyle(
       fontFamily: kLato,
@@ -105,7 +114,8 @@ abstract class Styles {
       color: kSurface,
     );
   }
-   static TextStyle abelRegular25(BuildContext context) {
+
+  static TextStyle abelRegular25(BuildContext context) {
     return TextStyle(
       fontFamily: kAbel,
       fontSize: getResponsiveFontSize(context: context, baseSize: 25),
@@ -126,7 +136,7 @@ double getResponsiveFontSize({
 double getScaleFactor(BuildContext context) {
   double width = MediaQuery.sizeOf(context).width;
   if (width > SizeConfig.desktop) {
-    return width / 1400;
+    return width / 1800;
   } else if (width > SizeConfig.tablet) {
     return width / 812;
   } else {
