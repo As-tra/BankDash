@@ -10,6 +10,7 @@ class CardsAndTransactions extends StatelessWidget {
     return const Row(
       children: [
         Expanded(flex: 2, child: MyCards()),
+        SizedBox(width: 30),
         Expanded(flex: 1, child: RecentTransaction()),
       ],
     );

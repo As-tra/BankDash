@@ -1,4 +1,5 @@
-
+import 'package:bank_dashboard/utils/styles.dart';
+import 'package:bank_dashboard/widgets/custom_card_container.dart';
 import 'package:flutter/material.dart';
 
 class RecentTransaction extends StatelessWidget {
@@ -6,6 +7,14 @@ class RecentTransaction extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Column(
+      children: [
+        Text(
+          'Recent Transaction',
+          style: Styles.interSemiBold22(context),
+        ),
+        CustomCardContainer(child: ),
+      ],
+    );
   }
 }

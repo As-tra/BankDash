@@ -26,6 +26,8 @@ class MyCards extends StatelessWidget {
         const Row(
           children: [
             Expanded(child: CreditCardItem()),
+            SizedBox(width: 30),
+            Expanded(child: CreditCardItem()),
           ],
         )
       ],
