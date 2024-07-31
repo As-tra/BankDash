@@ -110,8 +110,25 @@ abstract class Styles {
   static TextStyle latoSemiBold16(BuildContext context) {
     return TextStyle(
       fontFamily: kLato,
-      fontSize: getResponsiveFontSize(context: context, baseSize: 15),
+      fontSize: getResponsiveFontSize(context: context, baseSize: 16),
       fontWeight: FontWeight.w600,
+      color: kSurface,
+    );
+  }
+
+  static TextStyle latoSemiBold20(BuildContext context) {
+    return TextStyle(
+      fontFamily: kLato,
+      fontSize: getResponsiveFontSize(context: context, baseSize: 20),
+      fontWeight: FontWeight.w600,
+      color: kSurface,
+    );
+  }
+
+  static TextStyle latoRegular12(BuildContext context) {
+    return TextStyle(
+      fontFamily: kLato,
+      fontSize: getResponsiveFontSize(context: context, baseSize: 12),
       color: kSurface,
     );
   }
@@ -132,6 +149,7 @@ abstract class Styles {
       color: const Color(0xff343C6A),
     );
   }
+
   static TextStyle interSemiBold17(BuildContext context) {
     return TextStyle(
       fontFamily: kInter,

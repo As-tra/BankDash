@@ -1,4 +1,4 @@
-import 'package:bank_dashboard/widgets/my_cards.dart';
+import 'package:bank_dashboard/widgets/cards_and_transactions.dart';
 import 'package:flutter/material.dart';
 
 class DashboardBody extends StatelessWidget {
@@ -15,7 +15,11 @@ class DashboardBody extends StatelessWidget {
       ),
       child: const Column(
         children: [
-          MyCards(),
+          CardsAndTransactions(),
+          SizedBox(height: 24),
+          // ActivitiesAndStatics(),
+          // SizedBox(height: 24),
+          // TransferAndHistory(),
         ],
       ),
     );

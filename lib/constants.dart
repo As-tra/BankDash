@@ -10,7 +10,9 @@ const kSurface = Color(0xffFFFFFF);
 const kSecondary = Color(0xff1814F3);
 const kSelectionColor = Color(0xff2D60FF);
 
-const kDarkBlue = LinearGradient(
+const kGradient = LinearGradient(
+  begin: Alignment.topLeft,
+  end: Alignment.bottomRight,
   colors: [
     Color(0xff123288),
     Color(0xff295EEC),

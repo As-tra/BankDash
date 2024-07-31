@@ -13,6 +13,10 @@ class Assets {
   /// assets/images/appBarnotification.svg
   static const String imagesAppBarnotification = "assets/images/appBarnotification.svg";
 
+  /// Assets for imagesCardSim
+  /// assets/images/card_sim.svg
+  static const String imagesCardSim = "assets/images/card_sim.svg";
+
   /// Assets for imagesCreditCard
   /// assets/images/credit-card.svg
   static const String imagesCreditCard = "assets/images/credit-card.svg";
