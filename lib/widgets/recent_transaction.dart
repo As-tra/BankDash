@@ -13,7 +13,7 @@ class RecentTransaction extends StatelessWidget {
           'Recent Transaction',
           style: Styles.interSemiBold22(context),
         ),
-        CustomCardContainer(child: ),
+        // CustomCardContainer(child: ),
       ],
     );
   }

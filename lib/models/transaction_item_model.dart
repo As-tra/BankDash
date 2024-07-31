@@ -2,7 +2,7 @@ import 'package:bank_dashboard/enums/transaction_type.dart';
 import 'package:flutter/material.dart';
 
 class TransactionItemModel {
-  final String icon, title, date;
+  final String icon, title, date,amount;
   final Color bgColor;
   final TransactionType type;
 
@@ -12,5 +12,6 @@ class TransactionItemModel {
     required this.date,
     required this.bgColor,
     required this.type,
+    required this.amount,
   });
 }
