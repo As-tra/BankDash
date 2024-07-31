@@ -13,6 +13,14 @@ class Assets {
   /// assets/images/appBarnotification.svg
   static const String imagesAppBarnotification = "assets/images/appBarnotification.svg";
 
+  /// Assets for imagesBlackCardUnion
+  /// assets/images/black_card_union.svg
+  static const String imagesBlackCardUnion = "assets/images/black_card_union.svg";
+
+  /// Assets for imagesBlackSimCard
+  /// assets/images/black_sim_card.png
+  static const String imagesBlackSimCard = "assets/images/black_sim_card.png";
+
   /// Assets for imagesCardSim
   /// assets/images/card_sim.svg
   static const String imagesCardSim = "assets/images/card_sim.svg";
@@ -60,6 +68,14 @@ class Assets {
   /// Assets for imagesTransaction
   /// assets/images/transaction.svg
   static const String imagesTransaction = "assets/images/transaction.svg";
+
+  /// Assets for imagesWhiteCardUnion
+  /// assets/images/white_card_union.svg
+  static const String imagesWhiteCardUnion = "assets/images/white_card_union.svg";
+
+  /// Assets for imagesWhiteSimCard
+  /// assets/images/white_sim_Card.png
+  static const String imagesWhiteSimCard = "assets/images/white_sim_Card.png";
 
   /// Assets for imagesWomenProfile
   /// assets/images/womenProfile.png

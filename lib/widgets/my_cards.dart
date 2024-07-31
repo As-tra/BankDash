@@ -1,5 +1,6 @@
 import 'package:bank_dashboard/utils/styles.dart';
-import 'package:bank_dashboard/widgets/credit_card_item.dart';
+import 'package:bank_dashboard/widgets/active_credit_card_item.dart';
+import 'package:bank_dashboard/widgets/inactive_credit_card_item.dart';
 import 'package:flutter/material.dart';
 
 class MyCards extends StatelessWidget {
@@ -20,14 +21,14 @@ class MyCards extends StatelessWidget {
               'See All',
               style: Styles.interSemiBold17(context),
             ),
-            const SizedBox(height: 20),
           ],
         ),
+        const SizedBox(height: 20),
         const Row(
           children: [
-            Expanded(child: CreditCardItem()),
+            Expanded(child: ActiveCreditCardItem()),
             SizedBox(width: 30),
-            Expanded(child: CreditCardItem()),
+            Expanded(child: InactiveCreditCardItem()),
           ],
         )
       ],

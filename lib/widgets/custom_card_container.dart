@@ -5,9 +5,11 @@ class CustomCardContainer extends StatelessWidget {
     super.key,
     required this.child,
     this.color = Colors.white,
+    this.gradient,
   });
   final Widget child;
   final Color color;
+  final LinearGradient? gradient;
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +17,8 @@ class CustomCardContainer extends StatelessWidget {
       padding: const EdgeInsets.all(25),
       decoration: BoxDecoration(
         color: color,
-        borderRadius: BorderRadius.circular(25)
+        gradient: gradient,
+        borderRadius: BorderRadius.circular(25),
       ),
       child: child,
     );

@@ -115,11 +115,27 @@ abstract class Styles {
       color: kSurface,
     );
   }
+  static TextStyle latoSemiBold15(BuildContext context) {
+    return TextStyle(
+      fontFamily: kLato,
+      fontSize: getResponsiveFontSize(context: context, baseSize: 15),
+      fontWeight: FontWeight.w600,
+      color: kSurface,
+    );
+  }
 
   static TextStyle latoSemiBold20(BuildContext context) {
     return TextStyle(
       fontFamily: kLato,
       fontSize: getResponsiveFontSize(context: context, baseSize: 20),
+      fontWeight: FontWeight.w600,
+      color: kSurface,
+    );
+  }
+  static TextStyle latoSemiBold22(BuildContext context) {
+    return TextStyle(
+      fontFamily: kLato,
+      fontSize: getResponsiveFontSize(context: context, baseSize: 22),
       fontWeight: FontWeight.w600,
       color: kSurface,
     );

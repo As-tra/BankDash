@@ -1,3 +1,4 @@
+import 'package:bank_dashboard/constants.dart';
 import 'package:bank_dashboard/enums/transaction_type.dart';
 import 'package:bank_dashboard/models/transaction_item_model.dart';
 import 'package:bank_dashboard/utils/styles.dart';
@@ -18,7 +19,7 @@ class TransactionItem extends StatelessWidget {
       ),
       title: Text(
         itemModel.title,
-        style: Styles.interMedium16(context),
+        style: Styles.interMedium16(context).copyWith(color: kPrimary3),
       ),
       subtitle: Text(
         itemModel.date,

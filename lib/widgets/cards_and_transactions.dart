@@ -8,6 +8,7 @@ class CardsAndTransactions extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Expanded(flex: 2, child: MyCards()),
         SizedBox(width: 30),
