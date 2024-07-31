@@ -21,6 +21,10 @@ class Assets {
   /// assets/images/credit-card.svg
   static const String imagesCreditCard = "assets/images/credit-card.svg";
 
+  /// Assets for imagesGreenDollar
+  /// assets/images/green_dollar.svg
+  static const String imagesGreenDollar = "assets/images/green_dollar.svg";
+
   /// Assets for imagesHome
   /// assets/images/home.svg
   static const String imagesHome = "assets/images/home.svg";
@@ -36,6 +40,10 @@ class Assets {
   /// Assets for imagesLogo
   /// assets/images/logo.png
   static const String imagesLogo = "assets/images/logo.png";
+
+  /// Assets for imagesPaypal
+  /// assets/images/paypal.svg
+  static const String imagesPaypal = "assets/images/paypal.svg";
 
   /// Assets for imagesPrivileges
   /// assets/images/privileges.svg
@@ -56,5 +64,9 @@ class Assets {
   /// Assets for imagesWomenProfile
   /// assets/images/womenProfile.png
   static const String imagesWomenProfile = "assets/images/womenProfile.png";
+
+  /// Assets for imagesYellowCards
+  /// assets/images/yellow_cards.svg
+  static const String imagesYellowCards = "assets/images/yellow_cards.svg";
 }
 
