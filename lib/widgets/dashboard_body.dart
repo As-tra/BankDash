@@ -1,3 +1,4 @@
+import 'package:bank_dashboard/widgets/activities_and_statics.dart';
 import 'package:bank_dashboard/widgets/cards_and_transactions.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +18,7 @@ class DashboardBody extends StatelessWidget {
         children: [
           CardsAndTransactions(),
           SizedBox(height: 24),
-          // ActivitiesAndStatics(),
+          ActivitiesAndStatics(),
           // SizedBox(height: 24),
           // TransferAndHistory(),
         ],
