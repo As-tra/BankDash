@@ -1,0 +1,183 @@
+Date : 2024-08-01 21:18:51
+Directory : /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard
+Total : 99 files,  2821 codes, 336 comments, 458 blanks, all 3615 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| Dart       |         34 |      1,167 |         54 |        159 |      1,380 |
+| XML        |         27 |        622 |         53 |         29 |        704 |
+| C++        |         16 |        539 |        127 |        188 |        854 |
+| JSON       |          4 |        248 |          0 |          4 |        252 |
+| Groovy     |          3 |         81 |          6 |         17 |        104 |
+| Swift      |          6 |         50 |          7 |         20 |         77 |
+| YAML       |          2 |         38 |         74 |         13 |        125 |
+| CMake      |          2 |         36 |          0 |         12 |         48 |
+| HTML       |          1 |         19 |         15 |          5 |         39 |
+| Markdown   |          2 |         13 |          0 |          9 |         22 |
+| Properties |          2 |          8 |          0 |          2 |         10 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                      | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                         |         99 |      2,821 |        336 |        458 |      3,615 |
+| . (Files)                                                                                                                 |          3 |         48 |         74 |         20 |        142 |
+| android                                                                                                                   |         12 |        155 |         57 |         28 |        240 |
+| android (Files)                                                                                                           |          3 |         40 |          0 |          9 |         49 |
+| android/app                                                                                                               |          8 |        110 |         57 |         18 |        185 |
+| android/app (Files)                                                                                                       |          1 |         44 |          6 |          9 |         59 |
+| android/app/src                                                                                                           |          7 |         66 |         51 |          9 |        126 |
+| android/app/src/debug                                                                                                     |          1 |          3 |          4 |          1 |          8 |
+| android/app/src/main                                                                                                      |          5 |         60 |         43 |          7 |        110 |
+| android/app/src/main (Files)                                                                                              |          1 |         34 |         11 |          1 |         46 |
+| android/app/src/main/res                                                                                                  |          4 |         26 |         32 |          6 |         64 |
+| android/app/src/main/res/drawable                                                                                         |          1 |          4 |          7 |          2 |         13 |
+| android/app/src/main/res/drawable-v21                                                                                     |          1 |          4 |          7 |          2 |         13 |
+| android/app/src/main/res/values                                                                                           |          1 |          9 |          9 |          1 |         19 |
+| android/app/src/main/res/values-night                                                                                     |          1 |          9 |          9 |          1 |         19 |
+| android/app/src/profile                                                                                                   |          1 |          3 |          4 |          1 |          8 |
+| android/gradle                                                                                                            |          1 |          5 |          0 |          1 |          6 |
+| android/gradle/wrapper                                                                                                    |          1 |          5 |          0 |          1 |          6 |
+| assets                                                                                                                    |         17 |        152 |          0 |         17 |        169 |
+| assets/images                                                                                                             |         17 |        152 |          0 |         17 |        169 |
+| ios                                                                                                                       |          8 |        229 |          4 |         13 |        246 |
+| ios/Runner                                                                                                                |          7 |        222 |          2 |          9 |        233 |
+| ios/Runner (Files)                                                                                                        |          2 |         13 |          0 |          3 |         16 |
+| ios/Runner/Assets.xcassets                                                                                                |          3 |        148 |          0 |          4 |        152 |
+| ios/Runner/Assets.xcassets/AppIcon.appiconset                                                                             |          1 |        122 |          0 |          1 |        123 |
+| ios/Runner/Assets.xcassets/LaunchImage.imageset                                                                           |          2 |         26 |          0 |          3 |         29 |
+| ios/Runner/Base.lproj                                                                                                     |          2 |         61 |          2 |          2 |         65 |
+| ios/RunnerTests                                                                                                           |          1 |          7 |          2 |          4 |         13 |
+| lib                                                                                                                       |         33 |      1,153 |         44 |        152 |      1,349 |
+| lib (Files)                                                                                                               |          2 |         33 |          0 |          7 |         40 |
+| lib/enums                                                                                                                 |          1 |          4 |          0 |          1 |          5 |
+| lib/models                                                                                                                |          2 |         22 |          0 |          5 |         27 |
+| lib/utils                                                                                                                 |          3 |        205 |         42 |         45 |        292 |
+| lib/views                                                                                                                 |          1 |         17 |          0 |          3 |         20 |
+| lib/widgets                                                                                                               |         24 |        872 |          2 |         91 |        965 |
+| linux                                                                                                                     |          6 |        120 |         33 |         50 |        203 |
+| linux (Files)                                                                                                             |          3 |         94 |         24 |         33 |        151 |
+| linux/flutter                                                                                                             |          3 |         26 |          9 |         17 |         52 |
+| macos                                                                                                                     |          6 |        442 |          5 |         16 |        463 |
+| macos/Flutter                                                                                                             |          1 |          4 |          3 |          4 |         11 |
+| macos/Runner                                                                                                              |          4 |        431 |          0 |          8 |        439 |
+| macos/Runner (Files)                                                                                                      |          2 |         20 |          0 |          6 |         26 |
+| macos/Runner/Assets.xcassets                                                                                              |          1 |         68 |          0 |          1 |         69 |
+| macos/Runner/Assets.xcassets/AppIcon.appiconset                                                                           |          1 |         68 |          0 |          1 |         69 |
+| macos/Runner/Base.lproj                                                                                                   |          1 |        343 |          0 |          1 |        344 |
+| macos/RunnerTests                                                                                                         |          1 |          7 |          2 |          4 |         13 |
+| test                                                                                                                      |          1 |         14 |         10 |          7 |         31 |
+| web                                                                                                                       |          2 |         54 |         15 |          6 |         75 |
+| windows                                                                                                                   |         11 |        454 |         94 |        149 |        697 |
+| windows/flutter                                                                                                           |          3 |         26 |          9 |         17 |         52 |
+| windows/runner                                                                                                            |          8 |        428 |         85 |        132 |        645 |
++---------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                                                  | language   | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/README.md                                                     | Markdown   |         10 |          0 |          7 |         17 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/analysis_options.yaml                                         | YAML       |          3 |         22 |          4 |         29 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/android/app/build.gradle                                      | Groovy     |         44 |          6 |          9 |         59 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/android/app/src/debug/AndroidManifest.xml                     | XML        |          3 |          4 |          1 |          8 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/android/app/src/main/AndroidManifest.xml                      | XML        |         34 |         11 |          1 |         46 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/android/app/src/main/res/drawable-v21/launch_background.xml   | XML        |          4 |          7 |          2 |         13 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/android/app/src/main/res/drawable/launch_background.xml       | XML        |          4 |          7 |          2 |         13 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/android/app/src/main/res/values-night/styles.xml              | XML        |          9 |          9 |          1 |         19 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/android/app/src/main/res/values/styles.xml                    | XML        |          9 |          9 |          1 |         19 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/android/app/src/profile/AndroidManifest.xml                   | XML        |          3 |          4 |          1 |          8 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/android/build.gradle                                          | Groovy     |         16 |          0 |          3 |         19 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/android/gradle.properties                                     | Properties |          3 |          0 |          1 |          4 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/android/gradle/wrapper/gradle-wrapper.properties              | Properties |          5 |          0 |          1 |          6 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/android/settings.gradle                                       | Groovy     |         21 |          0 |          5 |         26 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/assets/images/account.svg                                     | XML        |         11 |          0 |          1 |         12 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/assets/images/appBarSettings.svg                              | XML        |         11 |          0 |          1 |         12 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/assets/images/appBarnotification.svg                          | XML        |          5 |          0 |          1 |          6 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/assets/images/black_card_union.svg                            | XML        |          4 |          0 |          1 |          5 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/assets/images/card_sim.svg                                    | XML        |          9 |          0 |          1 |         10 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/assets/images/credit-card.svg                                 | XML        |         13 |          0 |          1 |         14 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/assets/images/green_dollar.svg                                | XML        |          3 |          0 |          1 |          4 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/assets/images/home.svg                                        | XML        |          3 |          0 |          1 |          4 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/assets/images/investment.svg                                  | XML        |         16 |          0 |          1 |         17 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/assets/images/loan.svg                                        | XML        |         12 |          0 |          1 |         13 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/assets/images/paypal.svg                                      | XML        |          3 |          0 |          1 |          4 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/assets/images/privileges.svg                                  | XML        |         14 |          0 |          1 |         15 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/assets/images/service.svg                                     | XML        |         15 |          0 |          1 |         16 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/assets/images/settings.svg                                    | XML        |         10 |          0 |          1 |         11 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/assets/images/transaction.svg                                 | XML        |         14 |          0 |          1 |         15 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/assets/images/white_card_union.svg                            | XML        |          4 |          0 |          1 |          5 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/assets/images/yellow_cards.svg                                | XML        |          5 |          0 |          1 |          6 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/ios/Runner/AppDelegate.swift                                  | Swift      |         12 |          0 |          2 |         14 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json   | JSON       |        122 |          0 |          1 |        123 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json | JSON       |         23 |          0 |          1 |         24 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md     | Markdown   |          3 |          0 |          2 |          5 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/ios/Runner/Base.lproj/LaunchScreen.storyboard                 | XML        |         36 |          1 |          1 |         38 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/ios/Runner/Base.lproj/Main.storyboard                         | XML        |         25 |          1 |          1 |         27 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/ios/Runner/Runner-Bridging-Header.h                           | C++        |          1 |          0 |          1 |          2 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/ios/RunnerTests/RunnerTests.swift                             | Swift      |          7 |          2 |          4 |         13 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/lib/constants.dart                                            | Dart       |         18 |          0 |          3 |         21 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/lib/enums/transaction_type.dart                               | Dart       |          4 |          0 |          1 |          5 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/lib/main.dart                                                 | Dart       |         15 |          0 |          4 |         19 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/lib/models/drawer_item_model.dart                             | Dart       |          7 |          0 |          2 |          9 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/lib/models/transaction_item_model.dart                        | Dart       |         15 |          0 |          3 |         18 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/lib/utils/assets.dart                                         | Dart       |         24 |         42 |         23 |         89 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/lib/utils/size_config.dart                                    | Dart       |          4 |          0 |          1 |          5 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/lib/utils/styles.dart                                         | Dart       |        177 |          0 |         21 |        198 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/lib/views/dashboard_view.dart                                 | Dart       |         17 |          0 |          3 |         20 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/lib/widgets/active_credit_card_item.dart                      | Dart       |         28 |          0 |          3 |         31 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/lib/widgets/activities_and_statics.dart                       | Dart       |         14 |          0 |          3 |         17 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/lib/widgets/adaptive_layout_widget.dart                       | Dart       |         24 |          0 |          4 |         28 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/lib/widgets/card_balance_section.dart                         | Dart       |         36 |          0 |          3 |         39 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/lib/widgets/card_info_section.dart                            | Dart       |         50 |          0 |          3 |         53 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/lib/widgets/card_number_section.dart                          | Dart       |         46 |          0 |          2 |         48 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/lib/widgets/cards_and_transactions.dart                       | Dart       |         17 |          0 |          3 |         20 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/lib/widgets/custom_card_container.dart                        | Dart       |         24 |          0 |          3 |         27 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/lib/widgets/custom_drawer.dart                                | Dart       |         35 |          0 |          4 |         39 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/lib/widgets/custom_drawer_item.dart                           | Dart       |         18 |          0 |          3 |         21 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/lib/widgets/custom_drawer_list_view.dart                      | Dart       |         46 |          0 |          5 |         51 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/lib/widgets/custom_search_bar.dart                            | Dart       |         63 |          0 |          8 |         71 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/lib/widgets/dashboard_app_bar.dart                            | Dart       |         42 |          0 |          3 |         45 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/lib/widgets/dashboard_body.dart                               | Dart       |         24 |          2 |          3 |         29 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/lib/widgets/desktop_layout.dart                               | Dart       |         15 |          0 |          3 |         18 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/lib/widgets/inactive_and_active_drawer_item.dart              | Dart       |         60 |          0 |          6 |         66 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/lib/widgets/inactive_credit_card_item.dart                    | Dart       |         34 |          0 |          3 |         37 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/lib/widgets/my_cards.dart                                     | Dart       |         35 |          0 |          3 |         38 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/lib/widgets/overview_section.dart                             | Dart       |         15 |          0 |          3 |         18 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/lib/widgets/recent_transaction.dart                           | Dart       |         23 |          0 |          3 |         26 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/lib/widgets/recent_transaction_list.dart                      | Dart       |         40 |          0 |          4 |         44 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/lib/widgets/transaction_item.dart                             | Dart       |         36 |          0 |          3 |         39 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/lib/widgets/transfer_and_history.dart                         | Dart       |          8 |          0 |          2 |         10 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/lib/widgets/weekly_activities.dart                            | Dart       |        139 |          0 |         11 |        150 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/linux/flutter/generated_plugin_registrant.cc                  | C++        |          3 |          4 |          5 |         12 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/linux/flutter/generated_plugin_registrant.h                   | C++        |          5 |          5 |          6 |         16 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/linux/flutter/generated_plugins.cmake                         | CMake      |         18 |          0 |          6 |         24 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/linux/main.cc                                                 | C++        |          5 |          0 |          2 |          7 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/linux/my_application.cc                                       | C++        |         82 |         17 |         26 |        125 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/linux/my_application.h                                        | C++        |          7 |          7 |          5 |         19 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/macos/Flutter/GeneratedPluginRegistrant.swift                 | Swift      |          4 |          3 |          4 |         11 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/macos/Runner/AppDelegate.swift                                | Swift      |          8 |          0 |          2 |         10 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/macos/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json | JSON       |         68 |          0 |          1 |         69 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/macos/Runner/Base.lproj/MainMenu.xib                          | XML        |        343 |          0 |          1 |        344 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/macos/Runner/MainFlutterWindow.swift                          | Swift      |         12 |          0 |          4 |         16 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/macos/RunnerTests/RunnerTests.swift                           | Swift      |          7 |          2 |          4 |         13 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/pubspec.yaml                                                  | YAML       |         35 |         52 |          9 |         96 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/test/widget_test.dart                                         | Dart       |         14 |         10 |          7 |         31 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/web/index.html                                                | HTML       |         19 |         15 |          5 |         39 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/web/manifest.json                                             | JSON       |         35 |          0 |          1 |         36 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/windows/flutter/generated_plugin_registrant.cc                | C++        |          3 |          4 |          5 |         12 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/windows/flutter/generated_plugin_registrant.h                 | C++        |          5 |          5 |          6 |         16 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/windows/flutter/generated_plugins.cmake                       | CMake      |         18 |          0 |          6 |         24 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/windows/runner/flutter_window.cpp                             | C++        |         49 |          7 |         16 |         72 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/windows/runner/flutter_window.h                               | C++        |         20 |          5 |          9 |         34 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/windows/runner/main.cpp                                       | C++        |         30 |          4 |         10 |         44 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/windows/runner/resource.h                                     | C++        |          9 |          6 |          2 |         17 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/windows/runner/utils.cpp                                      | C++        |         54 |          2 |         10 |         66 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/windows/runner/utils.h                                        | C++        |          8 |          6 |          6 |         20 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/windows/runner/win32_window.cpp                               | C++        |        210 |         24 |         55 |        289 |
+| /home/astra/Desktop/Dart/responsive&adaptive/bank_dashboard/windows/runner/win32_window.h                                 | C++        |         48 |         31 |         24 |        103 |
+| Total                                                                                                                     |            |      2,821 |        336 |        458 |      3,615 |
++---------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

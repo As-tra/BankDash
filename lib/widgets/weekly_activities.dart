@@ -1,4 +1,5 @@
 import 'package:bank_dashboard/constants.dart';
+import 'package:bank_dashboard/widgets/bar_chart_caption.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
@@ -25,20 +26,26 @@ class WeeklyActivities extends StatelessWidget {
         color: kSurface,
         borderRadius: BorderRadius.circular(25),
       ),
-      child: AspectRatio(
-        aspectRatio: 3,
-        child: BarChart(
-          BarChartData(
-            barGroups: _buildBars,
-            titlesData: _getTitles(),
-            maxY: 500,
-            gridData: _buildGrid(),
-            barTouchData: BarTouchData(enabled: false),
-            borderData: _getBorder(),
+      child: Column(
+        children: [
+          const BarChartCaption(),
+          const SizedBox(height: 22),
+          AspectRatio(
+            aspectRatio: 3,
+            child: BarChart(
+              BarChartData(
+                barGroups: _buildBars,
+                titlesData: _getTitles(),
+                maxY: 500,
+                gridData: _buildGrid(),
+                barTouchData: BarTouchData(enabled: false),
+                borderData: _getBorder(),
+              ),
+              swapAnimationDuration: const Duration(milliseconds: 150),
+              swapAnimationCurve: Curves.linear,
+            ),
           ),
-          swapAnimationDuration: const Duration(milliseconds: 150),
-          swapAnimationCurve: Curves.linear,
-        ),
+        ],
       ),
     );
   }
@@ -86,19 +93,19 @@ class WeeklyActivities extends StatelessWidget {
     late String text;
     switch (value.toInt()) {
       case 0:
-        text = 'Mn';
+        text = 'Sat';
       case 1:
-        text = 'Te';
+        text = 'Sun';
       case 2:
-        text = 'Wd';
+        text = 'Mon';
       case 3:
-        text = 'Tu';
+        text = 'Tue';
       case 4:
-        text = 'Fr';
+        text = 'Wed';
       case 5:
-        text = 'St';
+        text = 'Thu';
       case 6:
-        text = 'Sn';
+        text = 'Fri';
     }
     return SideTitleWidget(
       axisSide: AxisSide.bottom,
@@ -131,13 +138,16 @@ class WeeklyActivities extends StatelessWidget {
         .entries
         .map(
           (ele) => BarChartGroupData(
+            barsSpace: 12,
             x: ele.key,
             barRods: [
               BarChartRodData(
+                width: 15,
                 toY: ele.value[0],
                 color: firstBarColor,
               ),
               BarChartRodData(
+                width: 15,
                 toY: ele.value[1],
                 color: secondBarColor,
               )
