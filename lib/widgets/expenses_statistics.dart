@@ -1,17 +1,17 @@
-import 'package:bank_dashboard/widgets/custom_bar_chart.dart';
+import 'package:bank_dashboard/widgets/custom_pie_chart.dart';
 import 'package:bank_dashboard/widgets/custom_section_header.dart';
 import 'package:flutter/material.dart';
 
-class WeeklyActivities extends StatelessWidget {
-  const WeeklyActivities({super.key});
+class ExpensesStatistics extends StatelessWidget {
+  const ExpensesStatistics({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const Column(
       children: [
-        CustomSectionHeader(text: 'Weekly Activity'),
+        CustomSectionHeader(text: 'Expense Statistics'),
         SizedBox(height: 18),
-        CustomBarChart(),
+        CustomPieChart(),
       ],
     );
   }

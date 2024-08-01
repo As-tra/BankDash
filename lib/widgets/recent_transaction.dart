@@ -1,5 +1,5 @@
-import 'package:bank_dashboard/utils/styles.dart';
 import 'package:bank_dashboard/widgets/custom_card_container.dart';
+import 'package:bank_dashboard/widgets/custom_section_header.dart';
 import 'package:bank_dashboard/widgets/recent_transaction_list.dart';
 import 'package:flutter/material.dart';
 
@@ -8,17 +8,11 @@ class RecentTransaction extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+    return const Column(
       children: [
-        Text(
-          'Recent Transaction',
-          style: Styles.interSemiBold22(context),
-        ),
-        const SizedBox(height: 20),
-        const CustomCardContainer(
-          child: RecentTransactionList(),
-        ),
+        CustomSectionHeader(text: 'Recent Transaction'),
+        SizedBox(height: 20),
+        CustomCardContainer(child: RecentTransactionList()),
       ],
     );
   }
