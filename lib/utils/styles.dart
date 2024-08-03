@@ -98,6 +98,16 @@ abstract class Styles {
     );
   }
 
+  static TextStyle interBold18(BuildContext context) {
+    return TextStyle(
+      fontFamily: kInter,
+      fontSize: getResponsiveFontSize(context: context, baseSize: 18),
+      fontWeight: FontWeight.w700,
+      color: kSurface,
+    );
+  }
+  
+
   static TextStyle interSemiBold28(BuildContext context) {
     return TextStyle(
       fontFamily: kInter,
@@ -115,6 +125,7 @@ abstract class Styles {
       color: kSurface,
     );
   }
+
   static TextStyle latoSemiBold15(BuildContext context) {
     return TextStyle(
       fontFamily: kLato,
@@ -132,6 +143,7 @@ abstract class Styles {
       color: kSurface,
     );
   }
+
   static TextStyle latoSemiBold22(BuildContext context) {
     return TextStyle(
       fontFamily: kLato,
