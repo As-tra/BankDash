@@ -65,6 +65,18 @@ class Assets {
   /// assets/images/settings.svg
   static const String imagesSettings = "assets/images/settings.svg";
 
+  /// Assets for imagesTeamMember1
+  /// assets/images/team_member_1.png
+  static const String imagesTeamMember1 = "assets/images/team_member_1.png";
+
+  /// Assets for imagesTeamMember2
+  /// assets/images/team_member_2.png
+  static const String imagesTeamMember2 = "assets/images/team_member_2.png";
+
+  /// Assets for imagesTeamMember3
+  /// assets/images/team_member_3.png
+  static const String imagesTeamMember3 = "assets/images/team_member_3.png";
+
   /// Assets for imagesTransaction
   /// assets/images/transaction.svg
   static const String imagesTransaction = "assets/images/transaction.svg";

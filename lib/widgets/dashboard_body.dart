@@ -1,5 +1,6 @@
 import 'package:bank_dashboard/widgets/activities_and_statics.dart';
 import 'package:bank_dashboard/widgets/cards_and_transactions.dart';
+import 'package:bank_dashboard/widgets/transfer_and_history.dart';
 import 'package:flutter/material.dart';
 
 class DashboardBody extends StatelessWidget {
@@ -14,14 +15,16 @@ class DashboardBody extends StatelessWidget {
         right: 40,
         bottom: 40,
       ),
-      child: const Column(
-        children: [
-          CardsAndTransactions(),
-          SizedBox(height: 24),
-          ActivitiesAndStatics(),
-          // SizedBox(height: 24),
-          // TransferAndHistory(),
-        ],
+      child: const SingleChildScrollView(
+        child: Column(
+          children: [
+            CardsAndTransactions(),
+            SizedBox(height: 24),
+            ActivitiesAndStatics(),
+            SizedBox(height: 24),
+            TransferAndHistory(),
+          ],
+        ),
       ),
     );
   }

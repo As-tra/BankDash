@@ -1,3 +1,4 @@
+import 'package:bank_dashboard/widgets/quick_transfer.dart';
 import 'package:flutter/material.dart';
 
 class TransferAndHistory extends StatelessWidget {
@@ -5,6 +6,10 @@ class TransferAndHistory extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const Row(
+      children: [
+        QuickTransfer(),
+      ],
+    );
   }
 }
