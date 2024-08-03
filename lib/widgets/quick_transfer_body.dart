@@ -1,5 +1,6 @@
 import 'package:bank_dashboard/constants.dart';
 import 'package:bank_dashboard/widgets/team_group.dart';
+import 'package:bank_dashboard/widgets/write_amout_part.dart';
 import 'package:flutter/material.dart';
 
 class QuickTransferBody extends StatelessWidget {
@@ -16,6 +17,8 @@ class QuickTransferBody extends StatelessWidget {
       child: const Column(
         children: [
           TeamGroup(),
+          SizedBox(height: 30),
+          WriteAmoutPart(),
         ],
       ),
     );

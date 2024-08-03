@@ -8,7 +8,9 @@ class TransferAndHistory extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Row(
       children: [
-        QuickTransfer(),
+        Expanded(flex: 89, child: QuickTransfer()),
+        SizedBox(width: 30),
+        Expanded(flex: 127, child: Placeholder())
       ],
     );
   }

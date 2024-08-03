@@ -57,6 +57,10 @@ class Assets {
   /// assets/images/privileges.svg
   static const String imagesPrivileges = "assets/images/privileges.svg";
 
+  /// Assets for imagesSend
+  /// assets/images/send.svg
+  static const String imagesSend = "assets/images/send.svg";
+
   /// Assets for imagesService
   /// assets/images/service.svg
   static const String imagesService = "assets/images/service.svg";

@@ -8,26 +8,23 @@ class TeamGroupItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(right: 33.0),
-      child: Column(
-        children: [
-          CircleAvatar(
-            backgroundImage: AssetImage(teamMemberModel.image),
-            radius: 35,
-          ),
-          const SizedBox(height: 15),
-          Text(
-            teamMemberModel.name,
-            style: Styles.interRegular16(context),
-          ),
-          const SizedBox(height: 5),
-          Text(
-            teamMemberModel.position,
-            style: Styles.interRegular16(context),
-          )
-        ],
-      ),
+    return Column(
+      children: [
+        CircleAvatar(
+          backgroundImage: AssetImage(teamMemberModel.image),
+          radius: 35,
+        ),
+        const SizedBox(height: 15),
+        Text(
+          teamMemberModel.name,
+          style: Styles.interRegular16(context),
+        ),
+        const SizedBox(height: 5),
+        Text(
+          teamMemberModel.position,
+          style: Styles.interRegular16(context),
+        )
+      ],
     );
   }
 }
