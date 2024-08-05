@@ -12,7 +12,11 @@ class RecentTransaction extends StatelessWidget {
       children: [
         CustomSectionHeader(text: 'Recent Transaction'),
         SizedBox(height: 20),
-        CustomCardContainer(child: RecentTransactionList()),
+        Expanded(
+          child: CustomCardContainer(
+            child: RecentTransactionList(),
+          ),
+        ),
       ],
     );
   }

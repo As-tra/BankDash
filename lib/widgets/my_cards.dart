@@ -24,12 +24,14 @@ class MyCards extends StatelessWidget {
           ],
         ),
         const SizedBox(height: 20),
-        const Row(
-          children: [
-            Expanded(child: ActiveCreditCardItem()),
-            SizedBox(width: 30),
-            Expanded(child: InactiveCreditCardItem()),
-          ],
+        const Expanded(
+          child: Row(
+            children: [
+              Expanded(child: ActiveCreditCardItem()),
+              SizedBox(width: 30),
+              Expanded(child: InactiveCreditCardItem()),
+            ],
+          ),
         )
       ],
     );

@@ -10,7 +10,9 @@ class OverviewSection extends StatelessWidget {
     return const Column(
       children: [
         DashboardAppBar(),
-        Expanded(child: DashboardBody()),
+        Expanded(
+          child: DashboardBody(),
+        ),
       ],
     );
   }

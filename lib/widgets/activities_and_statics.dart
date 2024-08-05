@@ -10,9 +10,15 @@ class ActivitiesAndStatics extends StatelessWidget {
     return const Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Expanded(flex: 2, child: WeeklyActivities()),
+        Expanded(
+          flex: 2,
+          child: WeeklyActivities(),
+        ),
         SizedBox(width: 30),
-        Expanded(flex: 1, child: ExpensesStatistics()),
+        Expanded(
+          flex: 1,
+          child: ExpensesStatistics(),
+        ),
       ],
     );
   }

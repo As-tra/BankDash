@@ -62,7 +62,7 @@ class _CustomPieChartState extends State<CustomPieChart> {
           color: ele.value.color,
           value: ele.value.percentage,
           title: "${ele.value.percentage}% \n${ele.value.title}",
-          titleStyle: Styles.interBold18(context),
+          titleStyle: Styles.interSemiBold16(context).copyWith(color: kSurface),
         );
       }).toList(),
     );

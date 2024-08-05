@@ -7,13 +7,16 @@ class CardsAndTransactions extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Expanded(flex: 2, child: MyCards()),
-        SizedBox(width: 30),
-        Expanded(flex: 1, child: RecentTransaction()),
-      ],
+    return const AspectRatio(
+      aspectRatio: 4.5,
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Expanded(flex: 2, child: MyCards()),
+          SizedBox(width: 30),
+          Expanded(flex: 1, child: RecentTransaction()),
+        ],
+      ),
     );
   }
 }

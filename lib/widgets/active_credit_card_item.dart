@@ -14,16 +14,13 @@ class ActiveCreditCardItem extends StatelessWidget {
         gradient: kGradient,
         borderRadius: BorderRadius.circular(25),
       ),
-      child: const AspectRatio(
-        aspectRatio: 290 / 172,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            CardBalanceSection(isActive: true,),
-            CardInfoSection(isActive: true,),
-            CardNumberSection(isActive: true,),
-          ],
-        ),
+      child: const Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          CardBalanceSection(isActive: true,),
+          CardInfoSection(isActive: true,),
+          CardNumberSection(isActive: true,),
+        ],
       ),
     );
   }

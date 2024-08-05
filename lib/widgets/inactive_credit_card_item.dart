@@ -14,22 +14,19 @@ class InactiveCreditCardItem extends StatelessWidget {
         color: kSurface,
         borderRadius: BorderRadius.circular(25),
       ),
-      child: const AspectRatio(
-        aspectRatio: 290 / 172,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            CardBalanceSection(
-              isActive: false,
-            ),
-            CardInfoSection(
-              isActive: false,
-            ),
-            CardNumberSection(
-              isActive: false,
-            ),
-          ],
-        ),
+      child: const Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          CardBalanceSection(
+            isActive: false,
+          ),
+          CardInfoSection(
+            isActive: false,
+          ),
+          CardNumberSection(
+            isActive: false,
+          ),
+        ],
       ),
     );
   }

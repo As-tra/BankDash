@@ -10,7 +10,9 @@ class DesktopLayout extends StatelessWidget {
     return const Row(
       children: [
         CustomDrawer(),
-        Expanded(child: OverviewSection()),
+        Expanded(
+          child: OverviewSection(),
+        ),
       ],
     );
   }
