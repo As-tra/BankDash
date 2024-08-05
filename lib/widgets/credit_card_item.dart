@@ -10,8 +10,11 @@ class CreditCardItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return isActive
-        ? ActiveCreditCardItem(model: creditCardModel)
-        : InactiveCreditCardItem(model: creditCardModel);
+    return AnimatedSwitcher(
+      duration: const Duration(milliseconds: 400),
+      child: isActive
+          ? ActiveCreditCardItem(model: creditCardModel)
+          : InactiveCreditCardItem(model: creditCardModel),
+    );
   }
 }

@@ -97,6 +97,14 @@ abstract class Styles {
       color: kPrimary3,
     );
   }
+   static TextStyle interSemiBold14(BuildContext context) {
+    return TextStyle(
+      fontFamily: kInter,
+      fontSize: getResponsiveFontSize(context: context, baseSize: 14),
+      fontWeight: FontWeight.w600,
+      color: kPrimary3,
+    );
+  }
 
   static TextStyle interBold18(BuildContext context) {
     return TextStyle(
@@ -212,6 +220,6 @@ double getScaleFactor(BuildContext context) {
   } else if (width > SizeConfig.tablet) {
     return width / 900;
   } else {
-    return width / 480;
+    return width / 400;
   }
 }

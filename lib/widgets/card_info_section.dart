@@ -15,16 +15,22 @@ class CardInfoSection extends StatelessWidget {
         children: [
           Column(
             children: [
-              Text(
-                'CARD HOLDER',
-                style: Styles.latoRegular12(context).copyWith(
-                  color: isActive ? Colors.white.withOpacity(0.7) : kPrimary1,
+              FittedBox(
+                fit: BoxFit.scaleDown,
+                child: Text(
+                  'CARD HOLDER',
+                  style: Styles.latoRegular12(context).copyWith(
+                    color: isActive ? Colors.white.withOpacity(0.7) : kPrimary1,
+                  ),
                 ),
               ),
-              Text(
-                'Eddy Cusuma',
-                style: Styles.latoSemiBold15(context).copyWith(
-                  color: isActive ? null : const Color(0xff343C6A),
+              FittedBox(
+                fit: BoxFit.scaleDown,
+                child: Text(
+                  'Eddy Cusuma',
+                  style: Styles.latoSemiBold15(context).copyWith(
+                    color: isActive ? null : const Color(0xff343C6A),
+                  ),
                 ),
               ),
             ],
@@ -32,16 +38,22 @@ class CardInfoSection extends StatelessWidget {
           
           Column(
             children: [
-              Text(
-                'VALID THRU',
-                style: Styles.latoRegular12(context).copyWith(
-                  color: isActive ? Colors.white.withOpacity(0.7) : kPrimary1,
+              FittedBox(
+                fit: BoxFit.scaleDown,
+                child: Text(
+                  'VALID THRU',
+                  style: Styles.latoRegular12(context).copyWith(
+                    color: isActive ? Colors.white.withOpacity(0.7) : kPrimary1,
+                  ),
                 ),
               ),
-              Text(
-                '12/22',
-                style: Styles.latoSemiBold15(context).copyWith(
-                  color: isActive ? null : const Color(0xff343C6A),
+              FittedBox(
+                fit: BoxFit.scaleDown,
+                child: Text(
+                  '12/22',
+                  style: Styles.latoSemiBold15(context).copyWith(
+                    color: isActive ? null : const Color(0xff343C6A),
+                  ),
                 ),
               ),
             ],

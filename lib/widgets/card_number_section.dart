@@ -31,17 +31,28 @@ class CardNumberSection extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text(
-            '3778 **** **** 1234',
-            style: Styles.latoSemiBold22(context).copyWith(
-              color: isActive ? null : const Color(0xff343C6A),
+          Flexible(
+            flex: 2,
+            child: FittedBox(
+              fit: BoxFit.scaleDown,
+              child: Text(
+                '3778 **** **** 1234',
+                style: Styles.latoSemiBold22(context).copyWith(
+                  color: isActive ? null : const Color(0xff343C6A),
+                ),
+              ),
             ),
           ),
-          SvgPicture.asset(isActive
-              ? Assets.imagesWhiteCardUnion
-              : Assets.imagesBlackCardUnion),
+
+          Flexible(
+            flex: 1,
+            child: SvgPicture.asset(isActive
+                ? Assets.imagesWhiteCardUnion
+                : Assets.imagesBlackCardUnion),
+          ),
         ],
       ),
     );
   }
 }
+

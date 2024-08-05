@@ -4,7 +4,7 @@ import 'package:bank_dashboard/utils/styles.dart';
 import 'package:flutter/material.dart';
 
 class CardBalanceSection extends StatelessWidget {
-  const CardBalanceSection({super.key,required this.isActive});
+  const CardBalanceSection({super.key, required this.isActive});
   final bool isActive;
 
   @override
@@ -16,21 +16,28 @@ class CardBalanceSection extends StatelessWidget {
         children: [
           Column(
             children: [
-              Text(
-                'Balance',
-                style: Styles.latoRegular12(context).copyWith(
-                  color: isActive ? null : kPrimary1,
+              FittedBox(
+                fit: BoxFit.scaleDown,
+                child: Text(
+                  'Balance',
+                  style: Styles.latoRegular12(context).copyWith(
+                    color: isActive ? null : kPrimary1,
+                  ),
                 ),
               ),
-              Text(
-                r'$5,756',
-                style: Styles.latoSemiBold20(context).copyWith(
-                  color: isActive ? null : const Color(0xff343C6A),
+              FittedBox(
+                fit: BoxFit.scaleDown,
+                child: Text(
+                  r'$5,756',
+                  style: Styles.latoSemiBold20(context).copyWith(
+                    color: isActive ? null : const Color(0xff343C6A),
+                  ),
                 ),
               )
             ],
           ),
-          Image.asset( isActive ? Assets.imagesWhiteSimCard : Assets.imagesBlackSimCard),
+          Image.asset(
+              isActive ? Assets.imagesWhiteSimCard : Assets.imagesBlackSimCard),
         ],
       ),
     );

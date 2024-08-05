@@ -29,28 +29,33 @@ class _CardsListViewState extends State<CardsListView> {
   int currentIndex = 0;
   @override
   Widget build(BuildContext context) {
-    return LayoutBuilder(builder: (context, constraints) {
-      return ListView.separated(
-        separatorBuilder: (context, index) => const SizedBox(width: 30),
+    return Container(
+      padding: const EdgeInsets.only(left: 25),
+      height: 200,
+      child: ListView.builder(
         scrollDirection: Axis.horizontal,
         itemCount: CardsListView.items.length,
         itemBuilder: (context, index) {
           return GestureDetector(
             onTap: () {
               if (currentIndex != index) {
-                index = currentIndex;
+                currentIndex = index;
                 setState(() {});
               }
             },
-            child: CreditCardItem(
-              isActive: currentIndex == index,
-              creditCardModel: CardsListView.items[index],
+            child: Padding(
+              padding: const EdgeInsets.only(right: 30.0),
+              child: AspectRatio(
+                aspectRatio: 1.5,
+                child: CreditCardItem(
+                  isActive: currentIndex == index,
+                  creditCardModel: CardsListView.items[index],
+                ),
+              ),
             ),
           );
         },
-      );
-    });
+      ),
+    );
   }
 }
-
-// 4- fit the size of the list view
