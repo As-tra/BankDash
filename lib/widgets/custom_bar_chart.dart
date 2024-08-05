@@ -30,8 +30,7 @@ class CustomBarChart extends StatelessWidget {
         children: [
           const BarChartCaption(),
           const SizedBox(height: 22),
-          AspectRatio(
-            aspectRatio: 3,
+          Expanded(
             child: BarChart(
               BarChartData(
                 barGroups: _buildBars,

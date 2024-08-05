@@ -29,17 +29,16 @@ class _CustomPieChartState extends State<CustomPieChart> {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 30),
       decoration: BoxDecoration(
-          color: kSurface, borderRadius: BorderRadius.circular(25)),
-      child: AspectRatio(
-        aspectRatio: 1,
-        child: LayoutBuilder(builder: (context, constraints) {
-          return PieChart(
-            _getPieChartData(constraints, context),
-            swapAnimationDuration: const Duration(milliseconds: 400),
-            swapAnimationCurve: Curves.linear,
-          );
-        }),
+        color: kSurface,
+        borderRadius: BorderRadius.circular(25),
       ),
+      child: LayoutBuilder(builder: (context, constraints) {
+        return PieChart(
+          _getPieChartData(constraints, context),
+          swapAnimationDuration: const Duration(milliseconds: 400),
+          swapAnimationCurve: Curves.linear,
+        );
+      }),
     );
   }
 
@@ -69,7 +68,7 @@ class _CustomPieChartState extends State<CustomPieChart> {
   }
 
   double getRadius(int value, double width) {
-    width = width / 2;
+    width = width / 2.1;
     switch (value) {
       case 0:
         return .83 * width;

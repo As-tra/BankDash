@@ -11,7 +11,7 @@ class ExpensesStatistics extends StatelessWidget {
       children: [
         CustomSectionHeader(text: 'Expense Statistics'),
         SizedBox(height: 18),
-        CustomPieChart(),
+        Expanded(child: CustomPieChart()),
       ],
     );
   }

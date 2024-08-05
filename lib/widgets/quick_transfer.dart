@@ -8,11 +8,10 @@ class QuickTransfer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         CustomSectionHeader(text: 'Quick Transfer'),
         SizedBox(height: 20),
-        QuickTransferBody()
+        Expanded(child: QuickTransferBody())
       ],
     );
   }

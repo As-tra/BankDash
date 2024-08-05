@@ -7,19 +7,22 @@ class ActivitiesAndStatics extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Expanded(
-          flex: 2,
-          child: WeeklyActivities(),
-        ),
-        SizedBox(width: 30),
-        Expanded(
-          flex: 1,
-          child: ExpensesStatistics(),
-        ),
-      ],
+    return const AspectRatio(
+      aspectRatio: 3.4,
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Expanded(
+            flex: 2,
+            child: WeeklyActivities(),
+          ),
+          SizedBox(width: 30),
+          Expanded(
+            flex: 1,
+            child: ExpensesStatistics(),
+          ),
+        ],
+      ),
     );
   }
 }

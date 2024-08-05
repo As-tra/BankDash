@@ -7,13 +7,16 @@ class TransferAndHistory extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Expanded(flex: 89, child: QuickTransfer()),
-        SizedBox(width: 30),
-        Expanded(flex: 127, child: BalanceHistory())
-      ],
+    return const AspectRatio(
+      aspectRatio: 4,
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Expanded(flex: 89, child: QuickTransfer()),
+          SizedBox(width: 30),
+          Expanded(flex: 127, child: BalanceHistory())
+        ],
+      ),
     );
   }
 }

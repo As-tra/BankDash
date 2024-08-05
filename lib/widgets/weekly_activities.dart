@@ -11,7 +11,7 @@ class WeeklyActivities extends StatelessWidget {
       children: [
         CustomSectionHeader(text: 'Weekly Activity'),
         SizedBox(height: 18),
-        CustomBarChart(),
+        Expanded(child: CustomBarChart()),
       ],
     );
   }

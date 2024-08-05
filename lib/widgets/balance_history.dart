@@ -8,14 +8,15 @@ class BalanceHistory extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  const Column(
+    return const Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         CustomSectionHeader(text: 'Balance History'),
         SizedBox(height: 20),
-        CustomLineChart()
+        Expanded(
+          child: CustomLineChart(),
+        )
       ],
     );
   }
 }
-

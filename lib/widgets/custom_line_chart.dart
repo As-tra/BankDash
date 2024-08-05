@@ -15,28 +15,25 @@ class CustomLineChart extends StatelessWidget {
         color: kSurface,
         borderRadius: BorderRadius.circular(25),
       ),
-      child: AspectRatio(
-        aspectRatio: 2.3,
-        child: LineChart(
-          LineChartData(
-              maxY: 800,
-              minY: 0,
-              lineBarsData: _getLinesData,
-              borderData: _getBorder(),
-              titlesData: _getTitles(),
-              gridData: _createGrid(),
-              lineTouchData: LineTouchData(
-                touchTooltipData: LineTouchTooltipData(
-                  getTooltipColor: (value) => Colors.transparent,
-                ),
-                getTouchLineStart: (barData, spotIndex) {
-                  return 0;
-                },
-                getTouchLineEnd: (barData, spotIndex) => 0,
-              )),
-          duration: const Duration(milliseconds: 150),
-          curve: Curves.linear,
-        ),
+      child: LineChart(
+        LineChartData(
+            maxY: 800,
+            minY: 0,
+            lineBarsData: _getLinesData,
+            borderData: _getBorder(),
+            titlesData: _getTitles(),
+            gridData: _createGrid(),
+            lineTouchData: LineTouchData(
+              touchTooltipData: LineTouchTooltipData(
+                getTooltipColor: (value) => Colors.transparent,
+              ),
+              getTouchLineStart: (barData, spotIndex) {
+                return 0;
+              },
+              getTouchLineEnd: (barData, spotIndex) => 0,
+            )),
+        duration: const Duration(milliseconds: 150),
+        curve: Curves.linear,
       ),
     );
   }
