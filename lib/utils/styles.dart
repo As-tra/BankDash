@@ -106,12 +106,20 @@ abstract class Styles {
       color: kSurface,
     );
   }
-  
 
   static TextStyle interSemiBold28(BuildContext context) {
     return TextStyle(
       fontFamily: kInter,
       fontSize: getResponsiveFontSize(context: context, baseSize: 28),
+      fontWeight: FontWeight.w600,
+      color: const Color(0xff343C6A),
+    );
+  }
+
+  static TextStyle interSemiBold20(BuildContext context) {
+    return TextStyle(
+      fontFamily: kInter,
+      fontSize: getResponsiveFontSize(context: context, baseSize: 20),
       fontWeight: FontWeight.w600,
       color: const Color(0xff343C6A),
     );
