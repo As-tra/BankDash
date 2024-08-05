@@ -18,7 +18,7 @@ class MobileSearchBar extends StatelessWidget {
           size: 28,
         ),
         hintText: 'Search for something',
-        hintStyle: Styles.interRegular15(context)
+        hintStyle: Styles.interRegular13(context)
             .copyWith(color: const Color(0xff8BA3CB)),
         fillColor: const Color(0xffF5F7FA),
         filled: true,

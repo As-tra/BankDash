@@ -1,6 +1,5 @@
 import 'package:bank_dashboard/utils/styles.dart';
-import 'package:bank_dashboard/widgets/active_credit_card_item.dart';
-import 'package:bank_dashboard/widgets/inactive_credit_card_item.dart';
+import 'package:bank_dashboard/widgets/credit_cards_row.dart';
 import 'package:flutter/material.dart';
 
 class MyCards extends StatelessWidget {
@@ -24,15 +23,7 @@ class MyCards extends StatelessWidget {
           ],
         ),
         const SizedBox(height: 20),
-        const Expanded(
-          child: Row(
-            children: [
-              Expanded(child: ActiveCreditCardItem()),
-              SizedBox(width: 30),
-              Expanded(child: InactiveCreditCardItem()),
-            ],
-          ),
-        )
+        const Expanded(child: CreditCardsRow())
       ],
     );
   }

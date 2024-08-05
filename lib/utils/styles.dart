@@ -212,6 +212,6 @@ double getScaleFactor(BuildContext context) {
   } else if (width > SizeConfig.tablet) {
     return width / 900;
   } else {
-    return width / 400;
+    return width / 480;
   }
 }

@@ -9,23 +9,28 @@ class MobileAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 25),
+      padding: const EdgeInsets.only(top: 20, left: 25, right: 25),
       child: Column(
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              const Icon(
-                Icons.menu,
-                color: Color(0xff343C6A),
-                size: 30,
+              IconButton(
+                onPressed: () {
+                  Scaffold.of(context).openDrawer();
+                },
+                icon: const Icon(
+                  Icons.menu,
+                  color: Color(0xff343C6A),
+                  size: 30,
+                ),
               ),
               Text(
                 'Overview',
                 style: Styles.interSemiBold20(context),
               ),
               const CircleAvatar(
-                radius: 17.5,
+                radius: 18,
                 backgroundImage: AssetImage(Assets.imagesWomenProfile),
               )
             ],

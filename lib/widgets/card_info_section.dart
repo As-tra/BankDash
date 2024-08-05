@@ -11,6 +11,7 @@ class CardInfoSection extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 26.0),
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Column(
             children: [
@@ -28,7 +29,7 @@ class CardInfoSection extends StatelessWidget {
               ),
             ],
           ),
-          const Flexible(child: SizedBox(width: 67)),
+          
           Column(
             children: [
               Text(
