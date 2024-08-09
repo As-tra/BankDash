@@ -13,7 +13,6 @@ class DashboardBody extends StatelessWidget {
         top: 24,
         left: 40,
         right: 40,
-        bottom: 40,
       ),
       child: const SingleChildScrollView(
         child: Column(

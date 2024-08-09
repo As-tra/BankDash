@@ -1,4 +1,5 @@
 import 'package:bank_dashboard/constants.dart';
+import 'package:bank_dashboard/utils/size_config.dart';
 import 'package:bank_dashboard/widgets/bar_chart_caption.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
@@ -20,8 +21,13 @@ class CustomBarChart extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // test if the we are in the mobile layout to minimize the
+    // the width of the bars
+    bool isMobile = MediaQuery.sizeOf(context).width < SizeConfig.tablet;
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 33, vertical: 28),
+      padding: isMobile
+          ? null
+          : const EdgeInsets.symmetric(horizontal: 33, vertical: 28),
       decoration: BoxDecoration(
         color: kSurface,
         borderRadius: BorderRadius.circular(25),
@@ -33,7 +39,7 @@ class CustomBarChart extends StatelessWidget {
           Expanded(
             child: BarChart(
               BarChartData(
-                barGroups: _buildBars,
+                barGroups: _buildBars(isMobile),
                 titlesData: _getTitles(),
                 maxY: 500,
                 gridData: _buildGrid(),
@@ -131,7 +137,8 @@ class CustomBarChart extends StatelessWidget {
     );
   }
 
-  List<BarChartGroupData> get _buildBars {
+  List<BarChartGroupData> _buildBars(bool isMobile) {
+    
     return barsValues
         .asMap()
         .entries
@@ -141,12 +148,12 @@ class CustomBarChart extends StatelessWidget {
             x: ele.key,
             barRods: [
               BarChartRodData(
-                width: 15,
+                width: isMobile ? 7: 15,
                 toY: ele.value[0],
                 color: firstBarColor,
               ),
               BarChartRodData(
-                width: 15,
+                width: isMobile ? 7: 15,
                 toY: ele.value[1],
                 color: secondBarColor,
               )
