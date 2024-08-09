@@ -1,4 +1,5 @@
 import 'package:bank_dashboard/constants.dart';
+import 'package:bank_dashboard/utils/size_config.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
@@ -9,8 +10,11 @@ class CustomLineChart extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    bool isMobile = MediaQuery.sizeOf(context).width < SizeConfig.tablet;
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 30),
+      padding: isMobile
+          ? null
+          : const EdgeInsets.symmetric(horizontal: 25, vertical: 30),
       decoration: BoxDecoration(
         color: kSurface,
         borderRadius: BorderRadius.circular(25),

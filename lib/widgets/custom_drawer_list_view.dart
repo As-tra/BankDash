@@ -1,5 +1,6 @@
 import 'package:bank_dashboard/models/drawer_item_model.dart';
 import 'package:bank_dashboard/utils/assets.dart';
+import 'package:bank_dashboard/utils/size_config.dart';
 import 'package:bank_dashboard/widgets/custom_drawer_item.dart';
 import 'package:flutter/material.dart';
 
@@ -24,8 +25,10 @@ class CustomDrawerListView extends StatefulWidget {
 
 class _CustomDrawerListViewState extends State<CustomDrawerListView> {
   int currentIndex = 0;
+
   @override
   Widget build(BuildContext context) {
+    bool isMobile = MediaQuery.sizeOf(context).width < SizeConfig.tablet;
     return SliverList.builder(
       itemCount: CustomDrawerListView.items.length,
       itemBuilder: (context, index) {
@@ -37,7 +40,8 @@ class _CustomDrawerListViewState extends State<CustomDrawerListView> {
             }
           },
           child: Padding(
-            padding: const EdgeInsets.only(bottom: 6.0),
+            padding:
+                isMobile ? EdgeInsets.zero : const EdgeInsets.only(bottom: 6.0),
             child: CustomDrawerItem(
               item: CustomDrawerListView.items[index],
               isActive: currentIndex == index,

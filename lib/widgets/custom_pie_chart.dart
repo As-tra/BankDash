@@ -1,5 +1,6 @@
 import 'package:bank_dashboard/constants.dart';
 import 'package:bank_dashboard/models/pie_chart_section_model.dart';
+import 'package:bank_dashboard/utils/size_config.dart';
 import 'package:bank_dashboard/utils/styles.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
@@ -24,10 +25,14 @@ class CustomPieChart extends StatefulWidget {
 
 class _CustomPieChartState extends State<CustomPieChart> {
   int currentIndex = -1;
+
   @override
   Widget build(BuildContext context) {
+    bool isMobile = MediaQuery.sizeOf(context).width < SizeConfig.tablet;
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 30),
+      padding: isMobile
+          ? null
+          : const EdgeInsets.symmetric(horizontal: 40, vertical: 30),
       decoration: BoxDecoration(
         color: kSurface,
         borderRadius: BorderRadius.circular(25),

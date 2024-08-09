@@ -1,6 +1,10 @@
+import 'package:bank_dashboard/widgets/balance_history.dart';
 import 'package:bank_dashboard/widgets/custom_section_header.dart';
+import 'package:bank_dashboard/widgets/expenses_statistics.dart';
 import 'package:bank_dashboard/widgets/mobile_app_bar.dart';
 import 'package:bank_dashboard/widgets/my_mobile_cards.dart';
+import 'package:bank_dashboard/widgets/quick_transfer.dart';
+import 'package:bank_dashboard/widgets/recent_transaction.dart';
 import 'package:bank_dashboard/widgets/recent_transaction_list.dart';
 import 'package:bank_dashboard/widgets/weekly_activities.dart';
 import 'package:flutter/material.dart';
@@ -17,15 +21,18 @@ class MobileLayout extends StatelessWidget {
           const SizedBox(height: 22),
           const MyMobileCards(),
           const SizedBox(height: 19),
+          // this I rebuild the widget because I have slight diffirence in the
+          // widget spacing and layout
           _buildMobileRecentTransaction,
           const SizedBox(height: 22),
-          const Padding(
-            padding: EdgeInsets.symmetric(horizontal: 25.0),
-            child: AspectRatio(
-              aspectRatio: 1,
-              child: WeeklyActivities(),
-            ),
-          ),
+          mobileWrapper(const WeeklyActivities()),
+          const SizedBox(height: 22),
+          mobileWrapper(const ExpensesStatistics()),
+          const SizedBox(height: 22),
+          mobileWrapper(const QuickTransfer(), ratio: 1.2),
+          const SizedBox(height: 22),
+          mobileWrapper(const BalanceHistory(), ratio: 1.4),
+          const SizedBox(height: 30),
         ],
       ),
     );
@@ -41,4 +48,14 @@ class MobileLayout extends StatelessWidget {
           ],
         ),
       );
+}
+
+Padding mobileWrapper(Widget child, {double ratio = 1}) {
+  return Padding(
+    padding: const EdgeInsets.symmetric(horizontal: 25.0),
+    child: AspectRatio(
+      aspectRatio: ratio,
+      child: child,
+    ),
+  );
 }
