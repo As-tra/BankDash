@@ -97,7 +97,8 @@ abstract class Styles {
       color: kPrimary3,
     );
   }
-   static TextStyle interSemiBold14(BuildContext context) {
+
+  static TextStyle interSemiBold14(BuildContext context) {
     return TextStyle(
       fontFamily: kInter,
       fontSize: getResponsiveFontSize(context: context, baseSize: 14),
@@ -215,10 +216,11 @@ double getResponsiveFontSize({
 
 double getScaleFactor(BuildContext context) {
   double width = MediaQuery.sizeOf(context).width;
+
   if (width > SizeConfig.desktop) {
     return width / 1800;
   } else if (width > SizeConfig.tablet) {
-    return width / 900;
+    return width / 1300;
   } else {
     return width / 400;
   }

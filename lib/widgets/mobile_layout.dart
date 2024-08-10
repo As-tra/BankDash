@@ -4,7 +4,6 @@ import 'package:bank_dashboard/widgets/expenses_statistics.dart';
 import 'package:bank_dashboard/widgets/mobile_app_bar.dart';
 import 'package:bank_dashboard/widgets/my_mobile_cards.dart';
 import 'package:bank_dashboard/widgets/quick_transfer.dart';
-import 'package:bank_dashboard/widgets/recent_transaction.dart';
 import 'package:bank_dashboard/widgets/recent_transaction_list.dart';
 import 'package:bank_dashboard/widgets/weekly_activities.dart';
 import 'package:flutter/material.dart';

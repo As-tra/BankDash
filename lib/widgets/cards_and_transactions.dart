@@ -1,3 +1,4 @@
+import 'package:bank_dashboard/utils/size_config.dart';
 import 'package:bank_dashboard/widgets/my_cards.dart';
 import 'package:bank_dashboard/widgets/recent_transaction.dart';
 import 'package:flutter/material.dart';
@@ -7,9 +8,10 @@ class CardsAndTransactions extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const AspectRatio(
-      aspectRatio: 4.5,
-      child: Row(
+    return AspectRatio(
+      aspectRatio:
+          MediaQuery.sizeOf(context).width < SizeConfig.desktop ? 3 : 4.5,
+      child: const Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Expanded(flex: 2, child: MyCards()),

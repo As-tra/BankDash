@@ -12,6 +12,10 @@ class CustomDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
       backgroundColor: kSurface,
+      width: MediaQuery.sizeOf(context).width < SizeConfig.desktop &&
+              MediaQuery.sizeOf(context).width > SizeConfig.tablet
+          ? 230
+          : null,
       shape: MediaQuery.sizeOf(context).width < SizeConfig.tablet
           ? null
           : const BeveledRectangleBorder(),

@@ -13,8 +13,9 @@ class CustomCardContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.sizeOf(context).width;
     return Container(
-      padding: const EdgeInsets.all(25),
+      padding: EdgeInsets.all(width < 1700 ? 15 : 25),
       decoration: BoxDecoration(
         color: color,
         gradient: gradient,
